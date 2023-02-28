@@ -13,6 +13,7 @@
 html,body {
     margin: 0;
     padding: 0;
+    height: 100%;
     max-height: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -20,6 +21,7 @@ html,body {
 
 body {
     min-height: 100vh;
+    height:100%;
     display: flex;
     flex-direction: column;
 }
@@ -87,13 +89,24 @@ and white home icon appear on hover*/
 /* Content */
 .content {
     margin: 1% 5%;
+    padding-bottom: 100px;
 }
 
 .container {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 1%;
+}
+
+a {
+    color: var(--secondary);
+}
+
+/* .container {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 900px;
-}
+} */
 
 .center {
     text-align: center;
@@ -102,8 +115,8 @@ and white home icon appear on hover*/
 #homepage-img {
     height: auto;
     width: 100%;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     z-index: -5;
     position: absolute;
     /* overflow-clip-margin: 5px; */
@@ -118,12 +131,21 @@ and white home icon appear on hover*/
     position: absolute;
 }
 
+#resume {
+    margin: auto;
+    border: none;
+    display: block;
+}
+
 /* Footer */
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 1% 0;
+    /* padding-top: 1%; */
+    padding-bottom: 1.5%;
+    height: 60px;
+    vertical-align: middle;
     background-color: var(--banner);
     color: var(--light-grey);
 }
